@@ -25,4 +25,15 @@
     target: '#sideNav'
   });
 
+  var lastmousmoved = 0;
+  // detect mouse usage
+  $('body').mousemove(function() {
+    var now = new Date().getTime();
+    if (lastmousmoved && now - lastmousmoved < 100) {
+      console.log();
+      $('.mobile-box').addClass('box').removeClass('mobile-box');
+      $('body').off( "mousemove" );
+    }
+    lastmousmoved = now;
+  });
 })(jQuery); // End of use strict

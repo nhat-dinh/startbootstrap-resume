@@ -25,7 +25,7 @@ h6 {
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
-  margin-left: -5px;
+  margin-left: -0.4rem;
 }
 
 h2 {
@@ -60,6 +60,51 @@ p {
 
 .list-icons .list-inline-item i:hover {
   color: #BD5D38;
+}
+
+.row {
+  margin-top: 2.5%;
+}
+
+.box, .mobile-box {
+  max-width: 400px;
+  max-height: 300px;
+  overflow: hidden;
+  text-align: center;
+  color: #343a40;
+  display: inline-table;
+}
+
+.box img, .mobile-box img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  overflow: hidden;
+}
+
+.box span, .mobile-box span {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.box span .em, .mobile-box span .em {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.box img {
+  cursor: pointer;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.box a:hover img {
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
